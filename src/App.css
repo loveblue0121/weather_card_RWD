@@ -1,38 +1,50 @@
-.App {
-  text-align: center;
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card {
+    border-radius: 10px !important;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+    position: relative;
+    top: 120px;
+    z-index: 10;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.ant-radio-group {
+  display: flex !important;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  max-width: 720px !important;
+  border: none !important;
+}
+.ant-radio-button-wrapper{
+  padding: 0 137px !important;
+  border: none !important;
+  border-radius: 30px !important;
+  height: 35px !important;
+  font-size: 1rem !important;
+}
+.ant-radio-button-wrapper:hover{
+  color: #ffc753 !important;
+  border: none !important;
 }
 
-.App-link {
-  color: #61dafb;
+.ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+  background: #000 !important;
+  color: #ffc753 !important;
+  border: none !important;
+  
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.selectList {
+  font-size: 35px !important;
+  color: #212121 !important;
+  margin: 20px 0 20px 0 !important;
+  width: 150px !important;
+}
+
+@media screen and (max-width: 710px){
+  
 }
